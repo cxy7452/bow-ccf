@@ -47,7 +47,7 @@ When this process finishes, a `categoryID.xls` excel file will be generated unde
 
 The CCFs are just SIFT features that appear frequently and reliably given an object category, therefore those SIFT patches can be visualized and inspected. Open up `visCCFs.m`, and first make sure line 8 (`datasetPath`) and 9 (`featurePath`) are correctly specified according to your previous steps, then you can specify which category's CCFs you would like the script to visualize, on line 10 (`catNum`), where the number is the category ID that you can look up from `categoryID.xls` under your `featurePath`. 
 
-You can also specify the number of CCFs to visualize at line 11 (`topCCFs`). Then, the script will visualize that many CCFs based on the SNR scores of the CCFs. Examples of visualizing the top 10 CCFs of the 'Knit caps', 'Sugar cookie', and 'Sailboats' categories:
+You can also specify the number of CCFs to visualize at line 11 (`topCCFs`). Then, the script will visualize that many CCFs based on the SNR scores of the CCFs (SIFT patches averaged over images of a category). Examples of visualizing the top 10 CCFs of the 'Knit caps', 'Sugar cookie', and 'Sailboats' categories:
 
 ![CCF Visualization](https://raw.githubusercontent.com/cxy7452/bow-ccf/master/CCFsVis.png "CCF Visualization Example")
 
