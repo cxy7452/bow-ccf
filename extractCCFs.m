@@ -8,10 +8,10 @@
 
 %% inputs
 %for loading
-datasetPath = '..\dataset\SBU-hierarchical68\';
+datasetPath = '.\dataset\SBU-hierarchical68\';
 
-%for saving
-featurePath = 'D:\matlab_work2\ccf_bow\release\dataset\features\';
+%for loading and saving
+featurePath = '.\dataset\features\';
 
 
 %% go through each category and extract the CCFs

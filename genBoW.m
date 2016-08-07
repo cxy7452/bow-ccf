@@ -7,18 +7,19 @@
 
 %% inputs
 %for loading
-datasetPath = '..\dataset\SBU-hierarchical68\';
+datasetPath = '.\dataset\SBU-hierarchical68\';
 
 %for saving
-featurePath = 'D:\matlab_work2\ccf_bow\release\dataset\features\';
-siftPath = 'D:\matlab_work2\ccf_bow\features\dsift\';
-huePath = 'D:\matlab_work2\ccf_bow\features\hue\';
+featurePath = '.\dataset\features\';
 
 %number of images per category for learning the BoW dictionary
 numTrain = 25; 
 
 
 %% extract the dsift and hue features for the 48 categories
+siftPath = '.\features\dsift\';
+huePath = '.\features\hue\';
+
 if exist(featurePath, 'dir') == 0
     mkdir(featurePath);
 end

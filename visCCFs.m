@@ -2,11 +2,13 @@
 %
 %visualize the CCFs of a given category as average of image patches
 
-clear all;
+%clear all;
 
 %% inputs
-datasetPath = 'D:\matlab_work2\ccf_bow\release\dataset\SBU-hierarchical68\';
-featurePath = 'D:\matlab_work2\ccf_bow\release\dataset\features\';
+datasetPath = '.\dataset\SBU-hierarchical68\';
+featurePath = '.\dataset\features\';
+catNum = 14;
+topCCFs = 10; %up to top k number of CCFs to be visualized
 
 
 %% visualization code
@@ -16,8 +18,6 @@ load([featurePath, 'categories.mat']);
 
 kdtree_vocab = vl_kdtreebuild(vocab);
 
-catNum = 14;
-topCCFs = 10; %up to top k number of CCFs to be visualized
 dSample = 0.5; 
 colorSIFT = 1;
 
